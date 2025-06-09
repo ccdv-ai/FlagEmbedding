@@ -38,7 +38,7 @@ class AbsEmbedderModelArguments:
         default="right",
         metadata={"help": "Select the padding side ('right' or 'left'). Default 'right'."}
     )
-    add_eos_add: bool = field(
+    add_eos_token: bool = field(
         default=True,
         metadata={"help": "Add an eos token."}
     )
