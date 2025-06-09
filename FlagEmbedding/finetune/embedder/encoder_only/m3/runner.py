@@ -52,7 +52,8 @@ class EncoderOnlyEmbedderM3Runner(AbsEmbedderRunner):
             cache_dir=self.model_args.cache_dir,
             token=self.model_args.token,
             trust_remote_code=self.model_args.trust_remote_code,
-            padding_size=self.model_args.padding_side
+            padding_size=self.model_args.padding_side,
+            add_eos_token=self.model_args.add_eos_token
         )
 
         num_labels = 1
