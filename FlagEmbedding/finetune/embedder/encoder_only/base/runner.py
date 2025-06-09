@@ -26,7 +26,8 @@ class EncoderOnlyEmbedderRunner(AbsEmbedderRunner):
             self.model_args.model_name_or_path,
             cache_dir=self.model_args.cache_dir,
             token=self.model_args.token,
-            trust_remote_code=self.model_args.trust_remote_code
+            trust_remote_code=self.model_args.trust_remote_code,
+            padding_size=self.model_args.padding_side
         )
         base_model = AutoModel.from_pretrained(
             self.model_args.model_name_or_path,

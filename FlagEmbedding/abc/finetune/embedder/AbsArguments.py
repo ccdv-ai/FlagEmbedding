@@ -34,6 +34,10 @@ class AbsEmbedderModelArguments:
         default_factory=lambda: os.getenv('HF_TOKEN', None),
         metadata={"help": "The token to use when accessing the model."}
     )
+    padding_side: str = field(
+        default="right",
+        metadata={"help": "Select the padding side ('right' or 'left'). Default 'right'."}
+    )
 
 
 @dataclass
